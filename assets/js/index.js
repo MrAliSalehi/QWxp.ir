@@ -44,6 +44,10 @@ fossButtons.forEach((btn) => {
 
 // mobile chart
 const mc = document.getElementById("chart-mobile");
+import {Chart, RadarController, LineElement, PointElement, RadialLinearScale, Filler, Tooltip} from 'chart.js'
+
+Chart.register(RadarController, LineElement, PointElement, RadialLinearScale, Filler, Tooltip);
+
 const data = {
     labels: [
         "Csharp",
@@ -69,9 +73,6 @@ const data = {
         },
     ],
 };
-import {Chart, RadarController, LineElement, PointElement, RadialLinearScale, Filler, Tooltip} from 'chart.js'
-
-Chart.register(RadarController, LineElement, PointElement, RadialLinearScale, Filler, Tooltip);
 
 Chart.defaults.color = "white";
 Chart.defaults.tick = "red";
