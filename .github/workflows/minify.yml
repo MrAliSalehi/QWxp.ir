@@ -17,7 +17,8 @@ jobs:
     - name: Auto Minify
       uses: nizarmah/auto-minify@v2.1
       with:
-        overwrite: true
+       output: 'build'
+        
 
     - name: Auto committing minified files
       uses: stefanzweifel/git-auto-commit-action@v4
