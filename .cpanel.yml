@@ -1,5 +1,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/qwxpir/public_html/
-    # - /bin/cp -R build/assets $DEPLOYPATH
-    - /bin/cp build/index.html $DEPLOYPATH
+    - /bin/cp -R dis/assets $DEPLOYPATH
+    - /bin/cp dis/index.html $DEPLOYPATH
