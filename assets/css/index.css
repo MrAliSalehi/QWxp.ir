@@ -1,21 +1,6 @@
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 500;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjr0B4uaVIGxA.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-@font-face {
-  font-family: 'Tilt Warp';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/tiltwarp/v5/AlZc_zVDs5XpmO7yn3w7flUoytXJp3z29uEwmEMLEJljLXvT8UJSZQB4C1b8GA.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Tilt+Warp&display=swap');
 @import url(font-icon.css);
+
 * {
   margin: 0;
   padding: 0;
@@ -147,7 +132,7 @@ main {
   width: 50%;
 }
 .about-me img {
-  max-width: 130px;
+  width: 130px;
 }
 .about-me p {
   margin-bottom: 20px;
@@ -212,16 +197,6 @@ main {
   opacity: 70%;
 }
 /* ====================
-Mobile Chart
-*/
-#chart-mobile {
-  visibility: collapse;
-}
-.chart-container {
-  width: 90%;
-  height: 40vh;
-}
-/* ====================
     FOSS
 */
 .after-section {
@@ -270,6 +245,7 @@ Mobile Chart
 }
 .project img {
   width: 300px;
+  height: 226px;
   border-radius: 20px;
 }
 .project img:hover {
@@ -349,13 +325,7 @@ footer {
      display: inline;
     padding-left: 40px;
   }
-  #chart-mobile {
-    visibility: visible;
-  }
 
-  td {
-    opacity: 75%;
-  }
   .prog-container div {
     margin: 10px;
   }
@@ -378,7 +348,9 @@ footer {
     display: block;
     width: 100%;
   }
-
+  .foss-header{
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (min-width: 681px) and (max-width: 772px) {
