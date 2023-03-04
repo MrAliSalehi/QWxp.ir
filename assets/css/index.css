@@ -223,19 +223,22 @@ main {
   justify-content: center;
   gap: 16px;
   flex-wrap: wrap;
+  width: 100%;
 }
 .project-info {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   padding: 7px 2px;
-}
-.project-description {
-  max-width: 300px;
+  flex-wrap: wrap;
 }
 .project {
   padding: 5px;
+  width: 32%;
+  display: flex;
+  flex-direction: column;
 }
+
 .badges * {
   background-color: #3763f4;
   color: white;
@@ -244,9 +247,11 @@ main {
   font-size: 0.9rem;
 }
 .project img {
-  width: 300px;
-  height: 226px;
-  border-radius: 20px;
+  width: 100%;
+  zoom: 2;
+  max-width: 330px;
+  border-radius: 10px;
+
 }
 .project img:hover {
   box-shadow: 1px 1px 7px 1px rgb(121, 34, 34);
@@ -258,6 +263,8 @@ main {
   display: block;
   text-align: center;
   color: white;
+  margin-top: auto;
+
 }
 .on-github:hover {
   color: #00f2ff;
@@ -351,6 +358,7 @@ footer {
   .foss-header{
     font-size: 1.2rem;
   }
+  .project { width: 100%}
 }
 
 @media screen and (min-width: 681px) and (max-width: 772px) {
@@ -364,5 +372,15 @@ footer {
 @media only screen and (min-width: 773px) and (max-width: 1000px) {
   #after-about {
     height: 50vh;
+  }
+
+}
+@media only screen and (max-width: 850px) {
+
+  .project{
+   width: 70%;
+  }
+  .project img {
+    zoom: 3;
   }
 }
